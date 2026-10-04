@@ -1,0 +1,32 @@
+{
+  "name": "Agenda de unhas Jaine Borges",
+  "short_name": "Jaine Agenda",
+  "description": "Agenda de manicure e pedicure da Jaine Borges",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#E8D4C2",
+  "theme_color": "#4A2C1D",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
