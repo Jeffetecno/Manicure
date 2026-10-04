@@ -55,7 +55,7 @@ create policy "Admin can insert service prices"
     to authenticated
     with check (
         id = 'service_prices'
-        and (select auth.jwt() ->> 'email') = 'jeffersontecno11@gmail.com'
+        and (select auth.jwt() ->> 'email') = 'borgesjaine1@gmail.com'
     );
 
 drop policy if exists "Admin can update service prices" on public.site_settings;
@@ -64,11 +64,11 @@ create policy "Admin can update service prices"
     to authenticated
     using (
         id = 'service_prices'
-        and (select auth.jwt() ->> 'email') = 'jeffersontecno11@gmail.com'
+        and (select auth.jwt() ->> 'email') = 'borgesjaine1@gmail.com'
     )
     with check (
         id = 'service_prices'
-        and (select auth.jwt() ->> 'email') = 'jeffersontecno11@gmail.com'
+        and (select auth.jwt() ->> 'email') = 'borgesjaine1@gmail.com'
     );
 
 drop policy if exists "Public can book an available time" on public.bookings;
@@ -81,7 +81,7 @@ drop policy if exists "Admin can read bookings" on public.bookings;
 create policy "Admin can read bookings"
     on public.bookings for select
     to authenticated
-    using ((select auth.jwt() ->> 'email') = 'jeffersontecno11@gmail.com');
+    using ((select auth.jwt() ->> 'email') = 'borgesjaine1@gmail.com');
 
 grant select on public.site_settings to anon, authenticated;
 grant insert, update on public.site_settings to authenticated;
